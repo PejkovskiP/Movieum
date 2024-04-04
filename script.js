@@ -50,16 +50,12 @@ const movies = [
     { title: "Abbott and Costello Meet Frankenstein", year: "1948", description: "The Wolf Man tries to warn a dimwitted porter that Dracula wants his brain for Frankenstein monster's body.", genre: "classics", image: "assets/images/classic-movies/frankestein.png" },
     { title: "The Day the Earth Stood Still", year: "1951", description: "An alien lands in Washington, D.C. and tells the people of Earth that they must live peacefully or be destroyed as a danger to other planets.", genre: "classics", image: "assets/images/classic-movies/earth-stood-still.png" },
 
-    { title: "The Wolf of Wall Street", year: "2013", description: "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.", genre: "crime" },
-    { title: "The Gentlemen", year: "2019", description: "An American expat tries to sell off his highly profitable marijuana empire in London, triggering plots, schemes, bribery and blackmail in an attempt to steal his domain out from under him.", genre: "crime" },
-    { title: "Anatomy of a Fall", year: "2023", description: "A woman is suspected of murder after her husband's death; their half-blind son faces a moral dilemma as the main witness.", genre: "crime" },
-    { title: "Love Lies Bleeding", year: "2024", description: "Gym manager Lou falls for Jackie, a bodybuilder who is passing through town en route to a competition in Las Vegas.", genre: "crime" },
-    { title: "Killers of the Flower Moon", year: "2023", description: "When oil is discovered in 1920s Oklahoma under Osage Nation land, the Osage people are murdered one by one - until the FBI steps in to unravel the mystery.", genre: "crime" },
-    { title: "The Batman", year: "2022", description: "When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.", genre: "crime" },
-    { title: "Animal", year: "2023", description: "The hardened son of a powerful industrialist returns home after years abroad and vows to take bloody revenge on those threatening his father's life.", genre: "crime" },
-    { title: "The Godfather", year: "1972", description: "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.", genre: "crime" }
+    { title: "The Wolf of Wall Street", year: "2013", description: "Based on the true story of Jordan Belfort, from his rise to a wealthy stock-broker living the high life to his fall involving crime, corruption and the federal government.", genre: "crime", image: "assets/images/crime-movies/wallstreet.png" },
+    { title: "The Gentlemen", year: "2019", description: "An American expat tries to sell off his highly profitable marijuana empire in London, triggering plots, schemes, bribery and blackmail in an attempt to steal his domain out from under him.", genre: "crime", image: "assets/images/crime-movies/gentlemen.png" },
+    { title: "Anatomy of a Fall", year: "2023", description: "A woman is suspected of murder after her husband's death; their half-blind son faces a moral dilemma as the main witness.", genre: "crime", image: "assets/images/crime-movies/anatomy-of-fall.png" },
+    { title: "Love Lies Bleeding", year: "2024", description: "Gym manager Lou falls for Jackie, a bodybuilder who is passing through town en route to a competition in Las Vegas.", genre: "crime", image: "assets/images/crime-movies/love-lies-bleeding.png" },
+    { title: "Killers of the Flower Moon", year: "2023", description: "When oil is discovered in 1920s Oklahoma under Osage Nation land, the Osage people are murdered one by one - until the FBI steps in to unravel the mystery.", genre: "crime", image: "assets/images/crime-movies/killers-flower-moon.png" },
+    { title: "The Batman", year: "2022", description: "When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.", genre: "crime", image: "assets/images/crime-movies/batman.png" },
+    { title: "Animal", year: "2023", description: "The hardened son of a powerful industrialist returns home after years abroad and vows to take bloody revenge on those threatening his father's life.", genre: "crime", image: "assets/images/crime-movies/animal.png" },
+    { title: "The Godfather", year: "1972", description: "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.", genre: "crime", image: "assets/images/crime-movies/godfather.png" }
 ];
-
-
-
-
