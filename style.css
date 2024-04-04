@@ -34,7 +34,7 @@ textarea {
 }
 /* End Reset CSS */
 
-.form-select-focus {
+.form-select:focus {
     border-color: #fff;
     outline: 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
