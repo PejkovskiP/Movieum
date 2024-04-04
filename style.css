@@ -18,7 +18,7 @@ body {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #fff;
 }
 
 button,
@@ -38,6 +38,11 @@ textarea {
     border-color: #fff;
     outline: 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Custom background color */
+.custom-bg {
+    background-color: #242840;
 }
 
 /* Custom width */
