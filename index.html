@@ -17,6 +17,26 @@
     <div class="container">
         <!-- Page Heading -->
         <h1 class="mt-5 text-center">Movieum</h1>
+
+        <!-- Filter by Genre -->
+        <div class="mt-5 d-flex align-items-center gap-4">
+            <label class="fs-3">Movies</label>
+            <select id="genreSelect" class="form-select custom-w-10 col-1 px-2">
+                <option value="all">All Genre</option>
+                <option value="action">Action</option>
+                <option value="comedy">Comedy</option>
+                <option value="drama">Drama</option>
+                <option value="anime">Anime</option>
+                <option value="horror">Horror</option>
+                <option value="classics">Classics</option>
+                <option value="crime">Crime</option>
+            </select>
+        </div>
+        
+        <!-- Movie posters -->
+        <div class="row mt-5" id="moviePosters">
+            <!-- Movie posters will be dynamically added here -->
+        </div>
     </div>
 
     <!-- jQuery -->
