@@ -33,12 +33,14 @@ textarea {
 }
 /* End Reset CSS */
 
+/* Custom form select style */
 .form-select:focus {
     border-color: #fff;
     outline: 0;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+/* Custom width */
 .custom-w-10 {
     width: 10%;
 }
