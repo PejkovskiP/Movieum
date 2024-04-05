@@ -74,8 +74,8 @@ function renderMoviePosters(genreFilter) {
                     '<div class="card h-100  movie-details" data-title="' + movie.title + '" data-year="' + movie.year + '" data-description="' + movie.description + '" data-bs-toggle="modal" data-bs-target="#movieModal"">' +
                         '<img src="' + movie.image + '" class="card-img-top" alt="Movie Poster">' +
                         '<div class="card-body">' +
-                            '<h5 class="card-title">' + movie.title + '</h5>' +
-                            '<p class="card-text mb-2">' + movie.year + '</p>' +
+                            '<h5 class="card-title ">' + movie.title + '</h5>' +
+                            '<p class="card-text fw-bold mb-2">' + movie.year + '</p>' +
                             '<p class="card-text mb-2">' + movie.description + '</p>' +
                         '</div>' +
                     '</div>' +
@@ -93,9 +93,9 @@ $(document).on('click', '.movie-details', function() {
 
     // Modal with movie details
     $('#movieModalBody').html (
-        '<p class="mb-2">Title: ' + title + '</p>' +
-        '<p class="mb-2">Year: ' + year + '</p>' +
-        '<p class="mb-2">Description: ' + description + '</p>' 
+        '<p class="mb-2"><strong>Title: </strong>' + title + '</p>' +
+        '<p class="mb-2"><strong>Year: </strong>' + year + '</p>' +
+        '<p class="mb-2"><strong>Description: </strong>' + description + '</p>' 
     );
 });
 
