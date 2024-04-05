@@ -71,14 +71,13 @@ function renderMoviePosters(genreFilter) {
             // Append movie poster card
             $('#moviePosters').append(
                 '<div class="col-lg-3 col-md-4 col-sm-6 mb-4">' +
-                    '<div class="card h-100">' +
+                    '<div class="card h-100  movie-details" data-title="' + movie.title + '" data-year="' + movie.year + '" data-description="' + movie.description + '" data-bs-toggle="modal" data-bs-target="#movieModal"">' +
                         '<img src="' + movie.image + '" class="card-img-top" alt="Movie Poster">' +
                         '<div class="card-body">' +
                             '<h5 class="card-title">' + movie.title + '</h5>' +
                             '<p class="card-text mb-2">' + movie.year + '</p>' +
                             '<p class="card-text mb-2">' + movie.description + '</p>' +
                         '</div>' +
-                        '<button class="btn btn-primary custom-w-85 custom-w-88 custom-w-94 mx-auto mb-2 movie-details" data-title="' + movie.title + '" data-year="' + movie.year + '" data-description="' + movie.description + '" data-bs-toggle="modal" data-bs-target="#movieModal">Details</button>' +
                     '</div>' +
                 '</div>'
             );
