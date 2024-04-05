@@ -2,7 +2,8 @@
 html,
 body,
 ul,
-ol {
+ol,
+p {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -45,7 +46,30 @@ textarea {
     background-color: #242840;
 }
 
-/* Custom width */
+/* Custom width 10%*/
 .custom-w-10 {
     width: 10%;
+}
+
+/* Custom width 30%*/
+.custom-w-30 {
+    width: 30%;
+}
+
+@media (max-width: 576px) {
+    .custom-w-94 {
+        width: 94%;
+    }
+  }
+  
+@media (min-width: 576px) {
+  .custom-w-85 {
+    width: 85%;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-w-88 {
+    width: 88%;
+  }
 }

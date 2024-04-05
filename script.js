@@ -59,3 +59,54 @@ const movies = [
     { title: "Animal", year: "2023", description: "The hardened son of a powerful industrialist returns home after years abroad and vows to take bloody revenge on those threatening his father's life.", genre: "crime", image: "assets/images/crime-movies/animal.png" },
     { title: "The Godfather", year: "1972", description: "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.", genre: "crime", image: "assets/images/crime-movies/godfather.png" }
 ];
+
+// Function to render movie posters
+function renderMoviePosters(genreFilter) {
+    // Clear previous posters
+    $('#moviePosters').empty();
+    
+    // Filter movies based on genre and render posters
+    movies.filter(function(movie) {
+        if (genreFilter === 'all' || movie.genre === genreFilter) {
+            // Append movie poster card
+            $('#moviePosters').append(
+                '<div class="col-lg-3 col-md-4 col-sm-6 mb-4">' +
+                    '<div class="card h-100">' +
+                        '<img src="' + movie.image + '" class="card-img-top" alt="Movie Poster">' +
+                        '<div class="card-body">' +
+                            '<h5 class="card-title">' + movie.title + '</h5>' +
+                            '<p class="card-text mb-2">' + movie.year + '</p>' +
+                            '<p class="card-text mb-2">' + movie.description + '</p>' +
+                        '</div>' +
+                        '<button class="btn btn-primary custom-w-85 custom-w-88 custom-w-94 mx-auto mb-2 movie-details" data-title="' + movie.title + '" data-year="' + movie.year + '" data-description="' + movie.description + '" data-bs-toggle="modal" data-bs-target="#movieModal">Details</button>' +
+                    '</div>' +
+                '</div>'
+            );
+        }
+    });
+}
+
+// Show movie details in modal on click
+$(document).on('click', '.movie-details', function() {
+    const title = $(this).data('title');
+    const year = $(this).data('year');
+    const description = $(this).data('description');
+
+    // Modal with movie details
+    $('#movieModalBody').html (
+        '<p class="mb-2">Title: ' + title + '</p>' +
+        '<p class="mb-2">Year: ' + year + '</p>' +
+        '<p class="mb-2">Description: ' + description + '</p>' 
+    );
+});
+
+// Render movies posters on page load
+$(document).ready(function() {
+    renderMoviePosters('all');
+});
+
+// Filter movies by genre
+$('#genreSelect').change(function() {
+    const selectGenre = $(this).val();
+    renderMoviePosters(selectGenre);
+});
