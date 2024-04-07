@@ -13,7 +13,7 @@ body {
     font-size: 1rem;
     font-weight: normal;
     line-height: 1.5;
-    background-color: #2D3250;
+    background: linear-gradient(to bottom, #2D3250, #4F5C91);
 }
 
 a {

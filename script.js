@@ -75,8 +75,8 @@ function renderMoviePosters(genreFilter) {
                         '<img src="' + movie.image + '" class="card-img-top" alt="Movie Poster">' +
                         '<div class="card-body">' +
                             '<h5 class="card-title ">' + movie.title + '</h5>' +
-                            '<p class="card-text fw-bold mb-2">' + movie.year + '</p>' +
                             '<p class="card-text fw-bold mb-2">' + movie.genre + '</p>' + 
+                            '<p class="card-text fw-bold mb-2">' + movie.year + '</p>' +
                             '<p class="card-text mb-2">' + movie.description + '</p>' +
                         '</div>' +
                     '</div>' +
